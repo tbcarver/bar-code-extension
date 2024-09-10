@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Fashionphile Scan Bar Code",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.fashionphile.us/*",
+        "http://www.fashionphile.dev/*",
+        "http://*.fashionphile.dev/*",
+        "https://www.fashionphile.dev/*",
+        "https://*.fashionphile.dev/*",
+        "https://www.fashionphile.dev/*",
+        "http://admin.fashionphile.test/*",
+        "http://www.fashionphile.local/*",
+        "http://www.fashionphile.localhost/*",
+        "https://www.fashionphile.com/*",
+        "http://*.fashionphile.com/*",
+        "https://admin.fashionphile.com/*",
+        "https://fallback-admin.fashionphile.com/*",
+        "https://staging-admin.fashionphile.com/*",
+        "http://localhost/*"
+      ],
+      "js": [
+        "injector.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
