@@ -28,9 +28,6 @@
       ],
       "js": [
         "injector.js"
-      ],
-      "css": [
-        "style.css"
       ]
     }
   ],
