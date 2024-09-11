@@ -65,7 +65,6 @@
 
   let barcodeControl = document.createElement('div');
   barcodeControl.className = 'barcode-control input-group';
-  barcodeControl.style.border = '1px solid #e7e7e7';
 
   let barcodeInput = document.createElement('input');
   barcodeInput.type = 'text';
