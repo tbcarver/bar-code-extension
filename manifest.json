@@ -10,21 +10,11 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.fashionphile.us/*",
-        "http://www.fashionphile.dev/*",
-        "http://*.fashionphile.dev/*",
-        "https://www.fashionphile.dev/*",
-        "https://*.fashionphile.dev/*",
-        "https://www.fashionphile.dev/*",
-        "http://admin.fashionphile.test/*",
-        "http://www.fashionphile.local/*",
-        "http://www.fashionphile.localhost/*",
-        "https://www.fashionphile.com/*",
-        "http://*.fashionphile.com/*",
-        "https://admin.fashionphile.com/*",
-        "https://fallback-admin.fashionphile.com/*",
-        "https://staging-admin.fashionphile.com/*",
-        "http://localhost/*"
+        "https://*.fashionphile.com/scanner/*",
+        "https://*.fashionphile.us/scanner/*",
+        "https://*.fashionphile.dev/scanner/*",
+        "http://*.fashionphile.test/scanner/*",
+        "http://localhost/scanner/*"
       ],
       "js": [
         "injector.js"

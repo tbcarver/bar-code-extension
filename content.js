@@ -32,6 +32,9 @@
 
   function getInput() {
     let input = document.querySelector('.barcode-control input');
+    if (!input) {
+      return;
+    }
     let value = input.value;
     input.value = "";
     return value;
