@@ -27,12 +27,8 @@
     }
   });
 
-  let callback = getCallBack();
-  console.log('Bar Code Scanning callback:' + callback);
-
-  function getCallBack() {
-    return document.querySelector('[name=scannerCallback]').value;
-  }
+  let callback = document.querySelector('[name=scannerCallback]')?.value;
+  console.log('Bar Code Scanning callback: ' + callback);
 
   function getInput() {
     let input = document.querySelector('.barcode-control input');
