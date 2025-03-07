@@ -11,10 +11,15 @@
     {
       "matches": [
         "https://*.fashionphile.com/scanner/*",
+        "https://*.fashionphile.com/receiving/index/*",
         "https://*.fashionphile.us/scanner/*",
+        "https://*.fashionphile.us/receiving/index/*",
         "https://*.fashionphile.dev/scanner/*",
+        "https://*.fashionphile.dev/receiving/index/*",
         "http://*.fashionphile.test/scanner/*",
-        "http://localhost/scanner/*"
+        "http://*.fashionphile.test/receiving/index/*",
+        "http://localhost/scanner/*",
+        "http://localhost/products/receiving/index/*"
       ],
       "js": [
         "injector.js"
